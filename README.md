@@ -3,13 +3,8 @@ Sub Stock()
 
 For Each ws In Worksheets
 
-'Summary Table Header
-'Cells(1, 9).Value = "Ticker"
-'Cells(1, 10).Value = "Yearly Change"
-'Cells(1, 11).Value = "Percent Change"
-'Cells(1, 12).Value = "Total Stock Volume"
-
 'Label Cells in Each Worksheet
+
 ws.Range("O1").Value = "Ticker"
 ws.Range("P1").Value = "Value"
 ws.Range("N2").Value = "Greatest % Increase"
@@ -17,6 +12,7 @@ ws.Range("N3").Value = "Greatest % Decrease"
 ws.Range("N4").Value = "Greatest Total Volume"
 
 'Label Cells Summary Table in Each Worksheet
+
 ws.Range("I1").Value = "Ticker"
 ws.Range("J1").Value = "Yearly Change"
 ws.Range("K1").Value = "Percent Change"
